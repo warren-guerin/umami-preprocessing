@@ -15,6 +15,7 @@
         <link rel="canonical" href="https://umami-hep.github.io/umami-preprocessing/contributing/">
       
       
+      
         <link rel="prev" href="../umami_int/">
       
       
@@ -25,7 +26,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="zensical-0.0.54">
+      <meta name="generator" content="zensical-0.0.71">
     
     
       
@@ -36,12 +37,12 @@
       
         
       
-      <link rel="stylesheet" href="../assets/stylesheets/classic/main.39e53929.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/classic/main.68ef4dbf.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../assets/stylesheets/classic/palette.7dc9a0ad.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/classic/palette.813d4b3f.min.css">
       
       
 
@@ -81,14 +82,11 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <label class="md-overlay" for="__drawer" aria-hidden="true"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#contributing-guidelines" class="md-skip">
-          Skip to content
-        </a>
-      
+      <a href="#__skip" class="md-skip">
+        Skip to content
+      </a>
     </div>
     <div data-md-component="announce">
       
@@ -396,6 +394,32 @@
   
   
     <li class="md-nav__item">
+      <a href="../hpc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Running on HPC
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../umami_int/" class="md-nav__link">
         
   
@@ -616,20 +640,22 @@
             <div class="md-content" data-md-component="content">
               
               <article class="md-content__inner md-typeset">
+                <a id="__skip" tabindex="-1"></a>
                 
                   
+
   
   
 
 
-  <h1 id="__skip">Contributing</h1>
+  <h1>Contributing</h1>
 
 <p>If you find a bug, have a feature request or similar, feel free to submit an issue.</p>
 <h3 id="contributing-guidelines">Contributing guidelines<a class="headerlink" href="#contributing-guidelines" title="Permanent link">#</a></h3>
-<p>If you want to contribute to the development of the UPP, you should create a <a href="https://docs.gitlab.com/ee/user/project/repository/forking_workflow.html">fork</a> of the repository.
+<p>If you want to contribute to the development of the UPP, you should create a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">fork</a> of the repository.
 You can read about forking workflows <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow">here</a>, or take a look at the contributing guidelines in the <a href="https://training-dataset-dumper.docs.cern.ch/development/#contributing-guidelines">training dataset dumper documentation</a>.</p>
-<p>You should make changes inside a <a href="https://docs.gitlab.com/ee/gitlab-basics/feature_branch_workflow.html">feature branch</a> in your fork. It is generally a good idea not to work directly on the the <code>main</code> branch in your fork. Then, when your feature is ready, open a <a href="https://docs.gitlab.com/ee/user/project/merge_requests/">merge request</a> to the target branch on upstream (which will usually be <code>main</code>). Once this is merged to upstream, you can <code>git pull upstream main</code> from your fork to bring back in the changes, and then fork again off <code>main</code> to start the development of a new feature. If your feature branch becomes outdated with its target, you may have to rebase or merge in the changes from the target branch, and resolve any conflicts, before you can merge.</p>
-<p>Remember to keep you fork <a href="https://about.gitlab.com/blog/2016/12/01/how-to-keep-your-fork-up-to-date-with-its-origin/">up to date</a> with upstream.</p>
+<p>You should make changes inside a feature branch in your fork. It is generally a good idea not to work directly on the <code>main</code> branch in your fork. Then, when your feature is ready, open a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">pull request</a> to the target branch on upstream (which will usually be <code>main</code>). Once this is merged to upstream, you can <code>git pull upstream main</code> from your fork to bring back in the changes, and then branch off <code>main</code> again to start the development of a new feature. If your feature branch becomes outdated with its target, you may have to rebase or merge in the changes from the target branch, and resolve any conflicts, before you can merge.</p>
+<p>Remember to keep your fork <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork">up to date</a> with upstream.</p>
 <h3 id="code-formatting">Code Formatting<a class="headerlink" href="#code-formatting" title="Permanent link">#</a></h3>
 <p>It's good practice to document your code with module and function docstrings, and inline comments.
 Consider also providing type hints for the function in/outputs.
@@ -703,7 +729,7 @@ You may also find the <a href="https://about.codecov.io/">codecov</a> tool helpf
 </footer>
       
     </div>
-    <div class="md-dialog" data-md-component="dialog">
+    <div class="md-dialog" data-md-component="dialog" role="status" aria-atomic="true">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
@@ -711,10 +737,14 @@ You may also find the <a href="https://about.codecov.io/">codecov</a> tool helpf
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["content.code.copy","navigation.sections","navigation.top"],"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["content.code.copy","navigation.sections","navigation.top"],"redirect":null,"search":"../assets/javascripts/workers/search.c47bb847.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../assets/javascripts/bundle.e886cdf1.min.js"></script>
+      <script src="../assets/javascripts/bundle.a2388154.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
